@@ -1,6 +1,6 @@
 ## LIX SDK issue tracker & discussions
 
-The source code is in our [monorepo/lix/source-code/client](https://github.com/opral/monorepo/tree/main/lix/source-code/client)
+The source code is in [monorepo/packages/lix-sdk](https://github.com/opral/monorepo/tree/lix-integration/packages/lix-sdk)
 
 ---
 
@@ -22,8 +22,6 @@ Examples of great lix apps have an "edit > review > automate" workflow:
 - spreadsheets (Excel, Google Sheets)
 - CAD software (Fusion 360, Autodesk)
 - data science analysis (Jupyter Notebooks)
-
-Check out the [design principles](./design-principles.md) if interested.
 
 ## Community & Support
 
