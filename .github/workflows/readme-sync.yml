@@ -1,0 +1,41 @@
+name: Readme Sync
+
+on:
+  schedule:
+    # Run once a day at midnight
+    - cron: "0 0 * * *"
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch README from Monorepo
+        run: |
+          curl -o README.tmp https://raw.githubusercontent.com/opral/monorepo/main/packages/lix-sdk/README.md
+          echo -e "> [!NOTE]\n> This repository serves as an issue tracker. The readme is mirrored from, and the source code is at [monorepo](https://github.com/opral/monorepo/tree/main/packages/lix-sdk). Make pull requests to the monorepo.\n\n$(cat README.tmp)" > README.md
+          rm README.tmp
+
+      - name: Check for Changes
+        id: check_changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "No changes detected."
+            echo "changed=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected."
+            echo "changed=true" >> $GITHUB_ENV
+          fi
+
+      - name: Commit and Push Changes
+        if: env.changed == 'true'  # Only run if changes exist
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: sync README from monorepo"
+          git push
