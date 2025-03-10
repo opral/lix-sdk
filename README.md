@@ -1,5 +1,5 @@
 > [!NOTE]
-> This repository serves as an issue tracker. The readme is mirrored from, and the source code is at [monorepo](https://github.com/opral/monorepo/tree/main/packages/lix-sdk). Make pull requests to the monorepo.
+> This repository serves as an issue tracker and documentation storage. The source code is in [opral/monorepo](https://github.com/opral/monorepo/tree/main/packages/lix-sdk). 
 
 # Lix SDK
 
