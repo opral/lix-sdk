@@ -3,6 +3,8 @@
 
 # Lix SDK
 
+[![NPM Downloads](https://img.shields.io/npm/dw/%40lix-js%2Fsdk?logo=npm&logoColor=red&label=npm%20downloads)](https://www.npmjs.com/package/@lix-js/sdk)
+
 ![Lix SDK](https://cdn.jsdelivr.net/gh/opral/monorepo/packages/lix-sdk/assets/banner.png)
 
 > [!NOTE]
