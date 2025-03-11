@@ -1,5 +1,5 @@
 > [!NOTE]
-> This repository serves as an issue tracker and documentation storage. The source code is in [opral/monorepo](https://github.com/opral/monorepo/tree/main/packages/lix-sdk). 
+> This repository serves as an issue tracker and documentation storage. The source code is in [opral/monorepo](https://github.com/opral/monorepo/tree/main/packages/lix-sdk).
 
 # Lix SDK
 
@@ -7,29 +7,24 @@
 
 ![Lix SDK](https://cdn.jsdelivr.net/gh/opral/monorepo/packages/lix-sdk/assets/banner.png)
 
-> [!NOTE]
-> Try the [demo](https://lix.opral.com/app/fm). 
-
 ## Introduction
 
 Lix is a change control system that runs in the browser and an SDK to build web apps.
 
 A change control system allows storing, tracking, querying, and reviewing changes in different file formats, e.g., `.xlsx`, `.sqlite`, or `.inlang`. Compared to a version control system, a change control system understands “what” changed in a file, e.g., cell C43 in the financials spreadsheet changed.
 
-![Diff examples](https://cdn.jsdelivr.net/gh/opral/monorepo/packages/lix-sdk/assets/diff-examples.svg)
+Lix is not a git replacement, nor is it designed for software engineering. The goal is to bring change control workflows to industries other than software engineering like health, finance, policy making, design, etc.
 
-> [!TIP]
-> Lix is not a git replacement nor is it designed for software engineering. 
-> 
-> The goal is to bring change control workflows to industries other than software engineering like health, finance, policy making, design, etc.
+Try a [demo lix app](https://lix.opral.com/app/fm). 
 
 ## Features
 
-- **File Storage**: Store and manage files.
-- **Versioning**: The possibility to create divergent state (branches in git). 
-- **Collaboration**: Lix comes with built-in sync which enables asynchronous (git-like) and real-time collaboration (Google Docs-like) capabilities.
-- **Validation Rules**: (WIP [#239](https://github.com/opral/lix-sdk/issues/239))Define and enforce validation rules for your data. 
-- **Change proposals**: (WIP [#242](https://github.com/opral/lix-sdk/issues/242))Similar workflow to pull requests in git. 
+- **📌 Versioning**: The possibility to create divergent states (branches in Git).  
+- **⚡ CI/CD**: Automations as we know them from software engineering.  
+- **🔀 Change Proposals**: (WIP [#242](https://github.com/opral/lix-sdk/issues/242)) Similar workflow to pull requests in Git.  
+- **🤝 Collaboration**: Lix comes with built-in sync, enabling asynchronous (Git-like) and real-time collaboration (Google Docs-like) capabilities.  
+- **✅ Validation Rules**: (WIP [#239](https://github.com/opral/lix-sdk/issues/239)) Define and enforce validation rules for your data.  
+ 
 
 ### Good to know
 
