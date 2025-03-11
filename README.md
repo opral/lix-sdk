@@ -19,7 +19,7 @@ A change control system allows storing, tracking, querying, and reviewing change
 ![Diff examples](https://cdn.jsdelivr.net/gh/opral/monorepo/packages/lix-sdk/assets/diff-examples.svg)
 
 > [!TIP]
-> Lix is not a git replaced, nor designed for software engineering. 
+> Lix is not a git replacement nor is it designed for software engineering. 
 > 
 > The goal is to bring change control workflows to industries other than software engineering like health, finance, policy making, design, etc.
 
