@@ -1,0 +1,17 @@
+{
+	"extends": "@opral/tsconfig/default",
+	"include": ["src/**/*"],
+	"compilerOptions": {
+		"skipDefaultLibCheck": true,
+		"emitDeclarationOnly": false,
+		"experimentalDecorators": false,
+		"useDefineForClassFields": false,
+		"lib": ["ESNext", "DOM"],
+		"noUnusedLocals": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	}
+}
